@@ -85,4 +85,4 @@ void Usage(const char *pname)
 
 ***
 
-### getopts 명령어
+### getopts 명령어.
