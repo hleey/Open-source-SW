@@ -14,8 +14,9 @@ Open-source-SW
 ### getopt 명령어
 (getopts와 헷갈리지 말 것!)
 > 예상되는 플래그와 인수를 지정하는 형식을 사용하여 토큰 리스트를 구문 분석한다. 플래그는 단일 ASCII 문자이며 뒤에 :(콜론)이 올 경우 하나 이상의 탭 또는 공백으로 분리하거나 분리할 수 없는 인수가 있어야 한다.
+###### 인용문 출처: https://www.ibm.com/docs/ko/aix/7.2?topic=g-getopt-command
 
-> long 옵션의 처리(--가 붙는 옵션, --posix, --wrning level 등)
+* long 옵션의 처리(--가 붙는 옵션, --posix, --wrning level 등)
 
 1) option은 그냥 나열하면된다.
 2) argument를 가지는 옵션은 :를 뒤에 붙인다.
@@ -34,9 +35,8 @@ getopt -l help,path:,name:
 
 ### getopts 명령어
 
-getopts 함수에 첫 번째와 두 번째 인자는 main 함수의 argc와 arg를 그대로 전달하고 세 번째 option에 제공하고자 하는 옵션을 전달한다. 만약 ‘a’, ‘l’ 옵션을 전달하고자 한다면 “al”이라고 전달하고 옵션 뒤에 인자를 사용해야 한다면 ‘:’을 추가한다. 만약 ‘a’에는 옵션 뒤에 인자를 사용하고 ‘l’에는 옵션 뒤에 인자를 사용하지 않는다면 “a:l”로 전달한다.
-(프로그램 실행에 의해 main()함수에서 넘겨진 argc와argv는 인자의 수와 배열을 나타낸다.)
-
+> getopts 명령은 매개변수 리스트에서 옵션 및 옵션 인수를 검색하는 Korn/POSIX 쉘 내장 명령입니다. 옵션은 +(더하기 부호) 또는 -(빼기 부호)로 시작하고 그 뒤에 문자가 옵니다. + 또는 -로 시작하지 않는 옵션은 OptionString을 종료합니다.
+###### 인용문 출처: https://www.ibm.com/docs/ko/aix/7.2?topic=g-getopts-command
  ```c
  /**********************************************************************
  * exmple source – using option                                        *
