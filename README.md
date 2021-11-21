@@ -133,6 +133,7 @@ awk 'pattern {action}' filename
 > ex
 
 * $ desc testfile  
+
 |이름|학번|분반|
 |------|---|---|
 |이라라|20180000|03|
